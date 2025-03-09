@@ -1,0 +1,293 @@
+.oportunities__grid {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  padding-bottom: 60px;
+  padding-inline: 160px;
+  padding-top: 30px;
+
+  .oportunities__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+
+    h6 {
+      color: var(--black);
+      font-family: Satoshi;
+      font-size: 30px;
+      text-align: left;
+      width: 100%;
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--black);
+      font-family: Satoshi;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  .grid__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 545px));
+    grid-auto-rows: minmax(300px, auto);
+    justify-content: center;
+    gap: 16px;
+
+    article[aria-disabled="true"] {
+      figure {
+        &:hover {
+          img {
+            transform: scale(0.8);
+          }
+        }
+        position: relative;
+      }
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      aspect-ratio: 1/1;
+      row-gap: 3px;
+      border-radius: 30px;
+
+      figure {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 30px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        figcaption {
+          display: flex;
+          flex-direction: row;
+          color: var(--white);
+          align-items: flex-end;
+          position: absolute;
+          bottom: 18px;
+          left: 23px;
+          column-gap: 10px;
+          width: max-content;
+          z-index: 4;
+          width: 85%;
+
+          p {
+            margin-bottom: -4px;
+            color: var(--white);
+            font-family: Satoshi;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+
+        img {
+          width: 125%;
+          height: 125%;
+          aspect-ratio: 1/1;
+          border-radius: 30px;
+          object-fit: cover;
+          transition: transform 0.5s ease-in-out;
+
+          &:hover {
+            transform: scale(0.8);
+          }
+        }
+      }
+
+      button {
+        border: none;
+        background: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 6px;
+        width: 100%;
+        height: 70px;
+        flex-shrink: 0;
+        border-radius: 28px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-color: var(--black);
+        color: var(--white);
+        cursor: pointer;
+      }
+    }
+  }
+
+  #download_brochure_form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, max-content);
+    gap: 12px;
+    padding: 20px;
+    overflow: hidden;
+
+    strong {
+      color: var(--white);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+      border-bottom: 1px solid #959595;
+
+      label {
+        color: var(--white);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-left: 3px;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        p {
+          color: var(--white);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        span {
+          width: 1px;
+          height: 13px;
+          margin-left: 10px;
+          background-color: #656565;
+        }
+      }
+
+      input,
+      textarea {
+        outline: none;
+        border: none;
+        background: none;
+        resize: none;
+        color: var(--white);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        width: 100% !important;
+        line-height: normal;
+        padding: 9px;
+
+        &::placeholder {
+          color: #959595;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  .form__wrapper__download {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    position: relative;
+
+    .bubble__form__infinity,
+    .bubble__form__dome {
+      position: absolute;
+      width: 300px;
+      height: 160px;
+      border-radius: 22px;
+
+      bottom: 73px;
+      right: 0px;
+      z-index: 9;
+
+      background-color: var(--black);
+      transition: transform 0.3s ease-in-out, width 0.3s ease-in-out,
+        height 0.3s ease-in-out, border-radius 0.3s ease-in-out,
+        bottom 0.3s ease-in-out;
+
+      &[aria-expanded="false"] {
+        width: 20px;
+        height: 20px;
+        padding: 0px;
+        border-radius: 100px;
+        bottom: 6px;
+
+        * {
+          opacity: 0;
+        }
+      }
+    }
+
+    button {
+      position: relative;
+      z-index: 8;
+      transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+
+      &[data-ready="true"] {
+        width: 100% !important;
+        color: var(--black) !important;
+        background-color: #d7d7d7 !important;
+      }
+
+      img {
+        mix-blend-mode: difference;
+      }
+
+      &:hover:not([data-disable="true"]) {
+        ~ .bubble__form {
+          bottom: 73px;
+        }
+      }
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+@media (width <= 1024px) {
+  .oportunities__grid {
+    padding-inline: 20px;
+
+    .oportunities__header {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding-left: 0px;
+
+      h6 {
+        width: 200px;
+        text-align: center;
+      }
+    }
+  }
+}

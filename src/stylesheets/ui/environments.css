@@ -1,0 +1,281 @@
+.voir__environments {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  column-gap: 20px;
+  padding-inline: 10%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+  .voir__environments__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+
+    h4 {
+      color: var(--black);
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      width: 100%;
+      text-align: start;
+    }
+
+    i {
+      color: var(--gray);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-top: 6px;
+      margin-left: 8px;
+      text-align: start;
+      width: 100%;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      width: 100%;
+      margin-top: 30px;
+      padding-bottom: 60px;
+
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-block: 19px;
+        padding-inline: 16px;
+        border-bottom: 1px solid var(--black);
+
+        &:first-child {
+          b {
+            font-weight: 700;
+            cursor: pointer;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        p {
+          color: var(--black);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 22px; /* 122.222% */
+        }
+
+        b {
+          color: var(--black);
+          text-align: right;
+          font-size: 17px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 22px; /* 122.222% */
+        }
+      }
+    }
+
+    .voir__environments__envs {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      width: 500px;
+
+      span {
+        display: grid;
+        place-items: center;
+        padding-block: 8px;
+        padding-inline: 20px;
+        border-radius: 100px;
+        background: var(--black);
+        cursor: pointer;
+
+        &:hover {
+          background: var(--black) !important;
+          color: var(--white) !important;
+        }
+
+        &[aria-selected="true"] {
+          background: var(--black);
+          color: var(--white);
+          border: 1px solid var(--black);
+        }
+
+        &[aria-selected="false"] {
+          background: transparent;
+          color: var(--black);
+          border: 1px solid var(--black);
+        }
+      }
+    }
+  }
+
+  .voir__environments__dimensions_under {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+    span {
+      display: grid;
+      place-items: center;
+      padding-block: 8px;
+      width: max-content;
+      padding-inline: 20px;
+      border-radius: 100px;
+      background: var(--black);
+      cursor: pointer;
+
+      &:hover {
+        background: var(--black) !important;
+        color: var(--white) !important;
+      }
+
+      &[aria-selected="true"] {
+        background: var(--black);
+        color: var(--white);
+        border: 1px solid var(--black);
+      }
+
+      &[aria-selected="false"] {
+        background: transparent;
+        color: var(--black);
+        border: 1px solid var(--black);
+      }
+    }
+  }
+
+  .voir__environments__preview {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    position: relative;
+
+    img {
+      width: calc(100% - 120px);
+      height: auto;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .voir__environments__dimensions {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 8px;
+      width: 120px;
+      padding-left: 15px;
+
+      span {
+        display: grid;
+        place-items: center;
+        padding-block: 8px;
+        width: 100%;
+        padding-inline: 10px;
+        border-radius: 100px;
+        background: var(--black);
+        cursor: pointer;
+
+        &:hover {
+          background: var(--black) !important;
+          color: var(--white) !important;
+        }
+
+        &[aria-selected="true"] {
+          background: var(--black);
+          color: var(--white);
+          border: 1px solid var(--black);
+        }
+
+        &[aria-selected="false"] {
+          background: transparent;
+          color: var(--black);
+          border: 1px solid var(--black);
+        }
+      }
+    }
+  }
+}
+
+@media (width <= 1024px) {
+  .voir__environments {
+    display: flex;
+    flex-direction: column;
+
+    .voir__environments__info {
+      width: 100%;
+      padding-inline: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+
+      ul {
+        margin-top: 12px;
+        padding-bottom: 24px;
+      }
+
+      h4 {
+        font-size: 28px;
+      }
+
+      i {
+        display: none;
+      }
+
+      .voir__environments__envs {
+        width: 100%;
+        order: 2;
+
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .voir__environments__preview {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
+      margin-top: 22px;
+      padding-inline: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      flex-direction: column;
+
+      img {
+        width: 100%;
+      }
+
+      .voir__environments__dimensions {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px;
+        padding-left: 0;
+        
+        span {
+          width: auto;
+          padding-inline: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,254 @@
+.voir__landing__page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 60px;
+  overflow: hidden;
+
+  .bubble_actions {
+    display: flex;
+    flex-direction: row;
+    column-gap: 14px;
+    position: fixed;
+    bottom: 105px;
+    right: 20px;
+    z-index: 9999;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 8px;
+      border: none;
+      width: 143px;
+      height: 46px;
+      border-radius: 100px;
+      background-color: var(--black);
+      transition: transform 0.5s ease-in-out;
+      cursor: pointer;
+      color: var(--white);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+
+    a[role="whatsapp"] {
+      display: grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      flex-shrink: 0;
+      border-radius: 100%;
+      background: var(--white);
+      transition: transform 0.5s ease-in-out;
+      cursor: pointer;
+      z-index: 99999999999;
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+  &::before {
+    content: " ";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+  }
+
+  .voir__landing__page__topinfo {
+    padding-top: 115px;
+    padding-left: 36px;
+    padding-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 93vh;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    span[role="back"] {
+      display: flex;
+      align-items: center;
+      column-gap: 4px;
+      cursor: pointer;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 1px;
+      width: max-content;
+
+      &:hover {
+        border-bottom: 1px solid var(--white);
+      }
+
+      a {
+        color: var(--white);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration: none;
+      }
+    }
+
+    span[role="logo"] {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      margin-top: 22px;
+      column-gap: 30px;
+
+      img {
+        width: 300px;
+        height: auto;
+      }
+
+      h1 {
+        color: var(--white);
+        font-family: Satoshi;
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: -9px;
+        user-select: none;
+        text-transform: capitalize;
+      }
+    }
+
+    .form__wrapper {
+      margin-top: auto;
+      margin-bottom: 0px;
+      width: 509px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 25px;
+      border-radius: 25px;
+    }
+  }
+
+  .voir__landing__page__content {
+    display: flex;
+    flex-direction: column;
+
+    .voir__landing__page__loop {
+      width: 100%;
+      height: 93vh;
+
+      video {
+        width: 100%;
+        height: 93vh;
+        object-fit: cover;
+        object-position: center;
+        z-index: 0;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 93vh;
+        object-fit: cover;
+        object-position: center;
+        z-index: 1;
+      }
+    }
+
+    .voir__landing__page__content__list {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-block: 21px;
+
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 15px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (width <= 1366px) {
+  .form__wrapper {
+    transform: scale(0.85);
+    transform-origin: bottom left;
+  }
+}
+
+@media (width <= 1024px) {
+  .voir__landing__page {
+    height: auto;
+    overflow: unset;
+
+    .voir__landing__page__topinfo {
+      height: 100vh;
+      padding-top: 100px;
+      padding-inline: 20px;
+
+      span[role="logo"] {
+        align-items: flex-start;
+        flex-direction: column;
+        width: max-content;
+        row-gap: 3px;
+
+        img {
+          width: 200px;
+        }
+
+        h1 {
+          font-family: Satoshi;
+          font-size: 32px;
+        }
+      }
+    }
+
+    .voir__landing__page__content {
+      .voir__landing__page__loop {
+        height: 100vh;
+
+        video {
+          height: 100vh;
+        }
+      }
+
+      .voir__landing__page__content__list {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        justify-content: center;
+        padding-block: 18px;
+        padding-inline: 8px;
+        gap: 20px;
+
+        li b {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .form__wrapper {
+    width: 100% !important;
+    transform-origin: bottom left;
+  }
+}

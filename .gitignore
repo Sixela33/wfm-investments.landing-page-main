@@ -1,0 +1,10 @@
+dist/
+public/
+node_modules/
+.parcel-cache/
+
+**/.DS_Store
+
+.env
+.env.*
+!.env.example

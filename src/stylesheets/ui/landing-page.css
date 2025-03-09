@@ -1,0 +1,104 @@
+.landing__page {
+  baclground-color: var(--black);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+
+	h1 {
+		position: absolute;
+		top: 260px;
+		left: 45px;
+		font-size: 5vw;
+		color: var(--white);
+		font-family: Satoshi;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 99%; /* 84.196px */
+	}
+
+	i {
+		color: #F4F4F4;
+		font-family: "Segoe UI";
+		font-style: italic;
+		font-weight: 400;
+		line-height: 99%;
+	}
+}
+
+.noise_texture {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+  z-index: 30;
+}
+
+.landing__page_sroll_down {
+  position: absolute;
+  left: 50%;
+  bottom: 115px;
+  transform: translateX(-50%);
+
+  button {
+    position: relative;
+    background: none;
+
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+		#spiral {
+			animation: spin 50s linear infinite;
+		}
+  }
+}
+
+a[role="whatsapp"] {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 100%;
+  background: var(--white);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+
+  position: fixed;
+  bottom: 105px;
+  right: 20px;
+  z-index: 99999999999;
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (width <= 1024px) {
+  .landing__page {
+    h1 {
+      top: 186px;
+      left: 20px;
+      font-size: 9vw;
+    }
+  }
+}

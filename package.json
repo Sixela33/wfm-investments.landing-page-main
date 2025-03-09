@@ -1,0 +1,33 @@
+{
+  "name": "my-project",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "engines": {
+    "node": ">=20.x",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "start": "parcel src/pages/index.html src/pages/aboutus/index.html src/pages/voir/**/*.html",
+    "build": "parcel build src/pages/index.html src/pages/aboutus/index.html src/pages/voir/**/*.html"
+  },
+  "staticFiles": {
+    "staticPath": "static",
+    "watcherGlob": "**"
+  },
+  "devDependencies": {
+    "@parcel/config-default": "^2.13.0",
+    "buffer": "^5.5.0||^6.0.0",
+    "parcel": "latest",
+    "parcel-reporter-static-files-copy": "^1.5.3",
+    "postcss": "^8.0.0",
+    "postcss-custom-properties": "^14.0.4",
+    "postcss-import": "^16.1.0",
+    "postcss-nested": "^7.0.2",
+    "postcss-url": "^10.1.3",
+    "process": "^0.11.10",
+    "svgo": "^3"
+  },
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.8"
+  }
+}

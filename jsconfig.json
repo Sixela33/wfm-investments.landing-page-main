@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "paths": {
+      "~/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules/", "dist/", ".parcel-cache/"],
+  "include": ["src/**/*.js", "src/**/*.d.ts"]
+}

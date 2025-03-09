@@ -1,0 +1,232 @@
+.image__sidetext {
+  display: flex;
+  flex-direction: row;
+  column-gap: 90px;
+  align-items: center;
+  justify-content: center;
+  padding-block: calc(100px / 2);
+
+  &:first-of-type {
+    padding-top: 20px;
+  }
+
+  &:last-of-type {
+    padding-bottom: 40px;
+  }
+
+  > img {
+    width: 650px;
+    height: 450px;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: center;
+
+    &[data-side="right"] {
+      order: 1;
+    }
+
+    &[data-side="left"] {
+      order: 0;
+    }
+  }
+
+  h4 {
+    color: var(--black);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 22px;
+    width: 35vw;
+  }
+
+  p,
+  li {
+    color: var(--black);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 122.222% */
+    width: 35vw;
+  }
+
+  #download_brochure_form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, max-content);
+    gap: 12px;
+    padding: 20px;
+    overflow: hidden;
+
+    strong {
+      color: var(--white);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+      border-bottom: 1px solid #959595;
+
+      label {
+        color: var(--white);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-left: 3px;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        p {
+          color: var(--white);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        span {
+          width: 1px;
+          height: 13px;
+          margin-left: 10px;
+          background-color: #656565;
+        }
+      }
+
+      input,
+      textarea {
+        outline: none;
+        border: none;
+        background: none;
+        resize: none;
+        color: var(--white);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        width: 100% !important;
+        line-height: normal;
+        padding: 9px;
+
+        &::placeholder {
+          color: #959595;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  .form__wrapper__download {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    position: relative;
+
+    .bubble__form {
+      position: absolute;
+      width: 300px;
+      height: 160px;
+      border-radius: 22px;
+
+      top: -45px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      background-color: var(--black);
+      transition: transform 0.3s ease-in-out, width 0.3s ease-in-out,
+        height 0.3s ease-in-out, border-radius 0.3s ease-in-out,
+        top 0.3s ease-in-out;
+
+      &[aria-expanded="false"] {
+        width: 20px;
+        height: 20px;
+        padding: 0px;
+        border-radius: 100px;
+        top: 0px;
+
+        * {
+          opacity: 0;
+        }
+      }
+    }
+
+    button {
+      position: relative;
+      z-index: 8;
+      background-color: var(--black);
+      color: var(--white);
+      width: 170px;
+      width: 100%;
+      height: 55px;
+      transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out !important;
+
+      &[data-ready="true"] {
+        width: 100% !important;
+        color: var(--black) !important;
+        background-color: #d7d7d7 !important;
+      }
+
+      img {
+        height: 22px;
+        width: 22px;
+        mix-blend-mode: difference;
+      }
+
+      &:hover:not([data-disable="true"]) {
+        ~ .bubble__form {
+          top: -45px;
+        }
+      }
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+@media (width <= 1024px) {
+  .image__sidetext {
+    flex-direction: column;
+    row-gap: 20px;
+    padding-block: 30px;
+    padding-inline: 20px;
+
+    h4,
+    p,
+    li {
+      width: 100%;
+    }
+
+    > div {
+      padding-inline: 12px;
+    }
+
+    img {
+      width: 100%;
+      height: 300px;
+
+      &[data-side="right"] {
+        order: 0 !important;
+      }
+
+      &[data-side="left"] {
+        order: 0 !important;
+      }
+    }
+  }
+}
