@@ -1,6 +1,6 @@
 export default {
   suites: {
-    video: "/videos/compressed/suites_compressed.mp4",
+    video: "/videos/suites.mov",
     tags: ["2026", "1, 2 y 3", "En construcción", "Amenábar 892, CABA"],
     brochure: "/dowloads/Brochure_Voir_Suites.pdf",
     sidetext: [
@@ -79,7 +79,7 @@ export default {
     },
   },
   amenabar: {
-    video: "/videos/compressed/amenabar_compressed.mp4",
+    video: "/videos/amenabar.mp4",
     tags: ["Inmediata", "1, 2, 3 y 4", "Finalizado", "Amenábar 2913, CABA"],
     brochure: "/dowloads/BROCHURE_VOIR_AMENABAR.pdf",
     sidetext: [
@@ -155,7 +155,7 @@ export default {
     },
   },
   palpa: {
-    video: "/videos/compressed/palpa_compressed.mp4",
+    video: "/videos/palpa.mp4",
     tags: ["Inmediata", "1, 2 y 3", "Finalizado", "Palpa 2634, CABA"],
     brochure: "/dowloads/Voir Palpa Carpeta NEW_V2.pdf",
     sidetext: [
@@ -208,7 +208,7 @@ export default {
     },
   },
   cespedes: {
-    video: "/videos/compressed/cespedes_compressed.mp4",
+    video: "/videos/cespedes.mov",
     tags: ["2027", "1, 2 y 3", "Etapa de pozo", "Céspedes 2518, CABA"],
     brochure: "/dowloads/PRESENTACION PRELIMINAR ALTA .pdf",
     sidetext: [
