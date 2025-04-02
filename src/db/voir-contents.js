@@ -1,6 +1,6 @@
 export default {
   suites: {
-    video: "/videos/suites.mov",
+    video: "/videos/suites_compressed.mp4",
     tags: ["2026", "1, 2 y 3", "En construcción", "Amenábar 892, CABA"],
     brochure: "/dowloads/Brochure_Voir_Suites.pdf",
     sidetext: [
@@ -26,7 +26,7 @@ export default {
       "/pics/suites/3 Amb.webp",
       "/pics/suites/Dormitorio.webp",
       "/pics/suites/Monoambiente.webp",
-      "/pics/suites/Baño.webp",
+      //"/pics/suites/Baño.webp",
       "/pics/suites/Sum - Subsuelo.webp",
       "/pics/suites/Terraza.webp",
       "/pics/suites/Edificio Dia.webp",
@@ -79,7 +79,7 @@ export default {
     },
   },
   amenabar: {
-    video: "/videos/amenabar.mp4",
+    video: "/videos/amenabar_compressed.mp4",
     tags: ["Inmediata", "1, 2, 3 y 4", "Finalizado", "Amenábar 2913, CABA"],
     brochure: "/dowloads/BROCHURE_VOIR_AMENABAR.pdf",
     sidetext: [
@@ -155,7 +155,7 @@ export default {
     },
   },
   palpa: {
-    video: "/videos/palpa.mp4",
+    video: "/videos/palpa_compressed.mp4",
     tags: ["Inmediata", "1, 2 y 3", "Finalizado", "Palpa 2634, CABA"],
     brochure: "/dowloads/Voir Palpa Carpeta NEW_V2.pdf",
     sidetext: [
@@ -184,7 +184,7 @@ export default {
       "/pics/palpa/IMG_9905.webp",
       "/pics/palpa/IMG_9981.webp",
       "/pics/palpa/IMG_9918.webp",
-      "/pics/palpa/VR_IRIVAS_PALPA_VISTA7_BAÑO_A03.webp",
+      //"/pics/palpa/VR_IRIVAS_PALPA_VISTA7_BAÑO_A03.webp",
       "/pics/palpa/IMG_0077.webp",
       "/pics/palpa/IMG_0073.webp",
       "/pics/palpa/Foto Pileta Dic. 2023.webp",
@@ -208,7 +208,7 @@ export default {
     },
   },
   cespedes: {
-    video: "/videos/cespedes.mov",
+    video: "/videos/cespedes_compressed.mp4",
     tags: ["2027", "1, 2 y 3", "Etapa de pozo", "Céspedes 2518, CABA"],
     brochure: "/dowloads/PRESENTACION PRELIMINAR ALTA .pdf",
     sidetext: [
