@@ -38,7 +38,7 @@ export default {
       link: "https://www.google.com.ar/maps/place/Amen%C3%A1bar+892,+C1426AJN+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.571546,-58.4507485,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb5c479a147dd:0x6e82f76f8b547b37!8m2!3d-34.571546!4d-58.4481736!16s%2Fg%2F11c4tschy7?entry=ttu&g_ep=EgoyMDI1MDEwNi4xIKXMDSoASAFQAw%3D%3D",
       location: "Amenábar 892, CABA",
       title: "Una nueva forma de vivir Colegiales",
-      coords: [-34.57142229240189, -58.44815214594486],
+      coords: [-34.57142229240189, -58.44815214594486, "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3285.903569077359!2d-58.466867488826196!3d-34.55599687285869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDMzJzIxLjYiUyA1OMKwMjcnNTEuNCJX!5e0!3m2!1ses-419!2sar!4v1743686606929!5m2!1ses-419!2sar"],
       body: "Voir Suites te invita a vivir en el equilibrio perfecto entre la ciudad y la tranquilidad. La comodidad y el bienestar se encuentran en cada detalle, ofreciéndote un estilo de vida que combina lo mejor de ambos mundos. Colegiales te recibe con una oferta gastronómica que va desde sus propios rincones secretos hasta los circuitos de Palermo Hollywood y Las Cañitas, a sólo unos pasos. Y gracias a su ubicación estratégica, Voir Suites conecta con toda la ciudad: estaciones de metrobus, tren y subte están a solo 4 cuadras, poniendo todo Buenos Aires a tu alcance. <br/><br/><b>En Voir Suites, no solo encontrás un hogar, sino un espacio pensado para vivir mejor.</b>",
     },
     environment: {
@@ -125,7 +125,7 @@ export default {
       title: "Encontrá tu hogar! Belgrano",
       location: "Amenábar 2913, CABA",
       body: "Amenábar se sitúa en el centro de Belgrano, uno de los barrios más dinámicos y seguros de Buenos Aires. Su ubicación estratégica ofrece rápido acceso a Av. Cabildo, Av. Congreso y los principales medios de transporte público, como la línea D de subte y el Metrobús. Se encuentra a solo minutos de centros médicos, prestigiosas instituciones educativas, comercios, clubes y una variada oferta gastronómica. Belgrano también brinda amplios espacios verdes para disfrutar al aire libre, convirtiéndolo en el entorno perfecto para un estilo de vida equilibrado. <br/><br/><b>Una ubicación que lo tiene todo: Conectividad, Seguridad y Confort</b>",
-      coords: [-34.5559969458807, -58.464287217109636],
+      coords: [-34.5559969458807, -58.464287217109636, "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3285.903569077359!2d-58.466867488826196!3d-34.55599687285869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDMzJzIxLjYiUyA1OMKwMjcnNTEuNCJX!5e0!3m2!1ses-419!2sar!4v1743687087913!5m2!1ses-419!2sar"], 
     },
     environment: {
       "3 Ambientes": {
@@ -195,7 +195,8 @@ export default {
       title: "Colegiales<br/> se renueva con VOIR PALPA",
       location: "Palpa 2634, CABA",
       body: "Con excelente conectividad, a solo cuatro cuadras tenés acceso al metrobús, subte y tren, lo que te permitirá desplazarte cómodamente por toda Buenos Aires.<br /><br />Desde Voir Palpa vas a disfrutar de una amplia variedad de opciones gastronómicas y culturales a minutos de distancia: desde los “rincones” de Colegiales hasta los reconocidos circuitos de Palermo Hollywood y Las Cañitas.<br /><br />VOIR Palpa: Diseño, confort y conexión en uno de los barrios más atractivos de la ciudad.",
-      coords: [-34.57140846102497, -58.44825973245216],
+      coords: [-34.57140846102497, -58.44825973245216, "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3285.2947223603487!2d-58.45083998882548!3d-34.57140847285312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDM0JzE3LjEiUyA1OMKwMjYnNTMuNyJX!5e0!3m2!1ses-419!2sar!4v1743687151805!5m2!1ses-419!2sar"],
+    
     },
     environment: {
       "Local Comercial": {
@@ -242,7 +243,7 @@ export default {
       title: "Belgrano - LIVE VOIR",
       location: "Céspedes 2518, CABA",
       body: "La comodidad y conectividad se encuentran en esta esquina privilegiada de Belgrano.<br/><br/>A tan solo unos pasos de la estación de tren Colegiales y a pocas cuadras de las estaciones de subte D, Olleros y José Hernández, tendrás acceso rápido y directo a las principales vías de transporte de la ciudad. Además, su cercanía a la Av. Cabildo te garantiza una excelente conexión con el resto de la ciudad, facilitando tus desplazamientos y acercándote a todos los servicios y comodidades que necesitas para vivir de manera plena y conveniente.",
-      coords: [-34.56976062442709, -58.44926707478073],
+      coords: [-34.56976062442709, -58.44926707478073, "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3285.3598352250915!2d-58.45184738882564!3d-34.56976057285361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDM0JzExLjEiUyA1OMKwMjYnNTcuNCJX!5e0!3m2!1ses-419!2sar!4v1743687312900!5m2!1ses-419!2sar"],
     },
     environment: {
       "Local Comercial 1": {
